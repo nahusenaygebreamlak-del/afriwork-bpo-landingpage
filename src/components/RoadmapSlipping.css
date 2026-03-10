@@ -111,9 +111,10 @@
 }
 
 .solution-card-title {
+    font-family: 'Poppins', sans-serif;
     color: #75216A;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 24px;
 }
 
