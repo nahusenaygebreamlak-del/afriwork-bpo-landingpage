@@ -1,0 +1,51 @@
+.engineers-section {
+    padding: 120px 0 200px;
+    background: linear-gradient(180deg, #ffffff 0%, #EF8D2F 10%, #DE0D76 30%, #75216A 50%, #FFFFFF 80%);
+    position: relative;
+    overflow: hidden;
+}
+
+.engineers-content {
+    text-align: center;
+    color: #fff;
+}
+
+.engineers-title {
+    font-family: 'Perfectly Nineties', serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.engineers-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    opacity: 0.9;
+}
+
+.profile-detail-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.profile-design-asset {
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+@media (max-width: 800px) {
+    .profile-detail-body {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}

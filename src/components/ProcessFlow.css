@@ -1,0 +1,113 @@
+.process-section {
+    padding: 120px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.process-flow-container {
+    position: relative;
+    max-width: 821px;
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 821 / 560;
+}
+
+.process-svg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.process-svg-wrap svg {
+    width: 100%;
+    height: auto;
+}
+
+.process-step {
+    position: absolute;
+    z-index: 2;
+    max-width: 180px;
+}
+
+.step-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #75216A;
+    margin-bottom: 8px;
+}
+
+.step-desc {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.step-1 {
+    top: calc(40 * 100% / 560);
+    left: calc(8 * 100% / 821);
+}
+
+.step-2 {
+    top: calc(142 * 100% / 560);
+    left: calc(274 * 100% / 821);
+}
+
+.step-3 {
+    top: calc(292 * 100% / 560);
+    left: calc(535 * 100% / 821);
+}
+
+.step-4 {
+    top: calc(390 * 100% / 560);
+    left: calc(811 * 100% / 821);
+    transform: translate(-95%, 16px);
+}
+
+.step-4-card {
+    background: linear-gradient(135deg, #EF8D2F 0%, #DE0D76 50%, #75216A 100%);
+    padding: 24px 32px;
+    border-radius: 20px;
+    color: #fff;
+    width: 220px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.step-4-card .step-title,
+.step-4-card .step-desc {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .process-flow-container {
+        height: auto;
+        aspect-ratio: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .process-svg-wrap {
+        display: none;
+    }
+
+    .process-step {
+        position: static;
+        text-align: center;
+        transform: none;
+    }
+
+    .step-dot {
+        margin: 0 auto 20px;
+    }
+
+    .step-4-card {
+        margin: 0 auto;
+    }
+}

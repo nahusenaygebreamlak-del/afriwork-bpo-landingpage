@@ -1,0 +1,140 @@
+/* =============================================
+   Afriwork BPO – Global Styles
+   Exact replica of the SVG design
+   ============================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange: #EF8D2F;
+  --pink: #DE0D76;
+  --purple: #75216A;
+  --red-mid: #E3355F;
+  --bg: #F6F6F6;
+  --white: #FFFFFF;
+  --dark: #1A1A2E;
+  --text-dark: #303030;
+  --text-gray: #808080;
+  --text-light: #B0B0B0;
+  --gradient: linear-gradient(90deg, #EF8D2F 0%, #E3355F 66%, #DE0D76 100%);
+  --gradient-v: linear-gradient(180deg, #EF8D2F 18%, #DE0D76 65%, #75216A 79%);
+  --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.10);
+  --shadow-nav: 0 2px 20px rgba(0, 0, 0, 0.08);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --radius-pill: 100px;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perfectly Nineties';
+  src: url('/fonts/PerfectlyNineties-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perfectly Nineties';
+  src: url('/fonts/PerfectlyNineties-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Perfectly Nineties';
+  src: url('/fonts/PerfectlyNineties-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perfectly Nineties';
+  src: url('/fonts/PerfectlyNineties-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perfectly Nineties';
+  src: url('/fonts/PerfectlyNineties-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Perfectly Nineties', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

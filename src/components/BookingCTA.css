@@ -1,0 +1,58 @@
+.cta-section {
+    padding: 120px 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-simple-content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-simple-content h2 {
+    font-family: 'Perfectly Nineties', serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400;
+    color: #75216A;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.cta-simple-content h2 em {
+    font-style: italic;
+}
+
+.cta-simple-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.btn-book-call {
+    background: linear-gradient(90deg, #EF8D2F 0%, #DE0D76 50%, #75216A 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 36px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 4px 15px rgba(222, 13, 118, 0.2);
+}
+
+.btn-book-call:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
