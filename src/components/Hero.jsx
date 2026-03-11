@@ -30,7 +30,7 @@ export default function Hero() {
                         </h1>
 
                         <div className="hero-actions">
-                            <a href="#contact" className="btn-primary">Book a Call</a>
+                            <a href="https://calendly.com/nahusenaygebreamlak/30min" className="btn-primary">Book a Call</a>
                             <a href="#contact" className="btn-outline">Request Candidates</a>
                         </div>
                     </div>

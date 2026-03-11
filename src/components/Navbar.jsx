@@ -2,14 +2,7 @@ import { useState, useEffect } from 'react'
 import './Navbar.css'
 
 export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
-
-    useEffect(() => {
-        const onScroll = () => setScrolled(window.scrollY > 20)
-        window.addEventListener('scroll', onScroll)
-        return () => window.removeEventListener('scroll', onScroll)
-    }, [])
 
     const navLinks = [
         { href: '#services', label: 'Services' },
@@ -33,7 +26,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <nav className="navbar">
             <div className="nav-inner">
                 {/* Logo */}
                 <a href="#" className="nav-logo" onClick={(e) => handleScroll(e, 'top')}>
@@ -101,7 +94,7 @@ export default function Navbar() {
                 </ul>
 
                 {/* CTA */}
-                <a href="#contact" className="btn-book" onClick={(e) => handleScroll(e, '#contact')}>
+                <a href="https://calendly.com/nahusenaygebreamlak/30min" className="btn-book">
                     Book a Call
                 </a>
 

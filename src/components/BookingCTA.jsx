@@ -14,7 +14,7 @@ export default function BookingCTA() {
                         Share the role you're looking for. We'll deliver 2–3<br />
                         pre-vetted engineers within 72 hours.
                     </p>
-                    <button className="btn-book-call">Book a Call</button>
+                    <a href="https://calendly.com/nahusenaygebreamlak/30min" className="btn-book-call">Book a Call</a>
                 </div>
             </div>
         </section>

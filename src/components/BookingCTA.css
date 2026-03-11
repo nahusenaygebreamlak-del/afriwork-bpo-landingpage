@@ -49,7 +49,6 @@
     border: none;
     cursor: pointer;
     transition: transform 0.2s, opacity 0.2s;
-    box-shadow: 0 4px 15px rgba(222, 13, 118, 0.2);
 }
 
 .btn-book-call:hover {
